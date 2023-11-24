@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="contenedorCO">
+            <div class="HeaderCO">
+                <div class="Quienes-somos"><h3 id="quien">Quienes somos</h3></div>
+                <div class="Que-hacemos"><h3 id="que">Qué hacemos</h3></div>
+                <div class="Donde-estamos"><h3 id="donde">Donde estamos</h3></div>
+            </div>
+            <div class="ContentCO">
+                <div class="divpreform">
+                    <h1>Queremos saber de ti!</h1>
+                    <div class="divform" id="divform">
+                        <form action="" class="formCO">
+                            <p>Nombre</p><input type="text" id="nombre" placeholder="Nombre">
+                            <p>Apellido</p><input type="text" id="apellido" placeholder="Apellidos">
+                            <table>    
+                                <th>
+                                    <td><p>Sr.</p></td>
+                                    <td><input type="radio" name="genero" id="masc"></td>
+                                    <td><p>Sra.</p></td>
+                                    <td><input type="radio" name="genero" id="feme"></td>
+                                </th>
+                            </table>
+                            <p>Email</p><input type="text" id="email" placeholder="Email">
+                            <p>¿Desea recibir notificaciones?</p>
+                            <input type="checkbox" id="notif"><label id="notif-value">Si</label><br><br>
+                            <input type="submit" class="submit" onclick="alertsubmit()">
+                        </form>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <button id="Inicio" hidden></button>
+        <button id="info" hidden></button>
+        <button id="contacto" hidden></button>
+        <script src="code.js"></script>
+    </body>
+</html>
